@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="c1.css">
+    <title>Document</title>
+</head>
+<style>
+  *{
+    box-sizing: border-box;
+    margin: 0px;
+}
+body{
+    background-color:  hsl(212, 45%, 89%);
+}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px;
+    border-radius: 15px;
+}
+.contain{
+    background-color:hsl(0, 0%, 100%) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    text-align: center;
+    width: 20%;
+    box-shadow: 10px black;
+}
+.scancode{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+}
+
+.scancode img{
+    width: 90%;
+    height: 90%;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+.bold-head{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 30px 25px 0px 25px;
+    color: hsl(218, 44%, 22%);
+}
+.para{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding:15px 20px 50px 20px;
+    text-align:center;
+    line-height: 15px;
+    color: hsl(220, 15%, 55%);
+}
+
+@media  (min-width:100px) and (max-width:375px) {
+    .contain{
+        width: 80%;
+    }
+    .para{
+        padding:15px 35px 50px 35px;
+    }
+    .bold-head{
+        padding: 30px 40px 0px 40px;
+    }
+}
+@media (min-width:375px) and (max-width:780px)
+{
+    .contain{
+        width:60%;
+    }
+    .par{
+        padding: 15px 35px 50px 35px;
+    }
+    .bold-head{
+        padding: 30px 40px 0px 40px;
+    }
+}
+</style>
+<body>
+    <div class="flex-container">
+        <div class="contain">
+            <div class="scancode">
+                <img src="./images/image-qr-code.png">
+            </div>
+            <div class="bold-head">Improve your front-end skills by building projects</div>
+            <div class="para">Scan QR code to visit Frontend Mentor and take your coding skills to the next level</div>
+        </div>
+    </div>
+</body>
+</html>
